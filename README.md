@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-google--cloud--sdk-green.svg)](https://anaconda.org/conda-forge/google-cloud-sdk)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/google-cloud-sdk.svg)](https://anaconda.org/conda-forge/google-cloud-sdk)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/google-cloud-sdk.svg)](https://anaconda.org/conda-forge/google-cloud-sdk)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/google-cloud-sdk.svg)](https://anaconda.org/conda-forge/google-cloud-sdk)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-google--cloud--sdk-green.svg)](https://anaconda.org/conda-forge/google-cloud-sdk) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/google-cloud-sdk.svg)](https://anaconda.org/conda-forge/google-cloud-sdk) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/google-cloud-sdk.svg)](https://anaconda.org/conda-forge/google-cloud-sdk) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/google-cloud-sdk.svg)](https://anaconda.org/conda-forge/google-cloud-sdk) |
 
 Installing google-cloud-sdk
 ===========================

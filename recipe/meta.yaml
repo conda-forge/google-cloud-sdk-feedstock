@@ -7,10 +7,10 @@ package:
 source:
   fn: google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux]
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  sha256: 37223616327ec82e33d0b07b77f6d641e4c031a786ea945f21e67f78fc67d1c1
+  sha256: 37223616327ec82e33d0b07b77f6d641e4c031a786ea945f21e67f78fc67d1c1  # [linux]
   fn: google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx]
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx]
-  sha256: 37223616327ec82e33d0b07b77f6d641e4c031a786ea945f21e67f78fc67d1c1
+  sha256: a7a8915dd24a8c054037c146e37e07a01b11fb65e5b3f1ff0fea10d2f56ef1f2  # [osx]
 
 build:
   number: 0
