@@ -18,6 +18,7 @@ build:
 
 requirements:
   build:
+    - python
   run:
     - python
 
@@ -35,3 +36,4 @@ about:
 extra:
   recipe-maintainers:
     - chapmanb
+    - scopatz
