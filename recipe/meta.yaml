@@ -13,8 +13,8 @@ source:
   sha256: 073e603d8ea4026dddb515cbbe5e7e481bc492da6e404ee473d69104023d2422  # [osx]
 
 build:
-  number: 0
-  skip: True  # [win or (not py27)]
+  number: 1
+  skip: True  # [win]
 
 requirements:
   build:
@@ -25,7 +25,7 @@ requirements:
 test:
   commands:
     - gcloud version
-    - gsutil help
+    - gsutil help  # [py2k]
 
 about:
   home: https://cloud.google.com/sdk/
