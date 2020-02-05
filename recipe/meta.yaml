@@ -1,4 +1,4 @@
-{% set version = "279.0.1" %}
+{% set version = "279.0.0" %}
 
 package:
   name: google-cloud-sdk
@@ -11,7 +11,7 @@ source:
   sha256: 06db9ca045ffe00c7a3c3d4b0749e77919597af65b7b0e02df6dd0711ce95d1f  # [osx]
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
