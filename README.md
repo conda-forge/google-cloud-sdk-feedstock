@@ -197,5 +197,6 @@ Feedstock Maintainers
 =====================
 
 * [@chapmanb](https://github.com/chapmanb/)
+* [@nehaljwani](https://github.com/nehaljwani/)
 * [@scopatz](https://github.com/scopatz/)
 
