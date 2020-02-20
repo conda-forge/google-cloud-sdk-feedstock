@@ -10,3 +10,9 @@ do
     sed -i.bak "s|# <cloud-sdk-sh-preamble>|export CLOUDSDK_PYTHON=$PREFIX/bin/python|g" $outdir/bin/$FNAME
     ln -s $outdir/bin/$FNAME $PREFIX/bin
 done
+
+# google-cloud-sdk starts from $outdir/lib/googlecloudsdk/core/config.py and
+# searches for any directory containing .install to mark it as the SDK_ROOT
+# Empty directories are ignored by the packaging process in Conda, so add a
+# placeholder to force inclusion of that folder
+mkdir -p $outdir/.install && touch $_/.conda

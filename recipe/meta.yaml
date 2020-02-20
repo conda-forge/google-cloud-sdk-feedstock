@@ -11,7 +11,7 @@ source:
   sha256: d9c4a987e64ab4f1ac2ce641be6ab2bd3113352f20b7043154c959da8640e441  # [osx]
 
 build:
-  number: 0
+  number: 1
   skip: True  # [win]
 
 requirements:
@@ -24,6 +24,7 @@ test:
   commands:
     - gcloud version
     - gsutil help  # [py2k]
+    - gcloud components list
 
 about:
   home: https://cloud.google.com/sdk/
@@ -36,3 +37,4 @@ extra:
   recipe-maintainers:
     - chapmanb
     - scopatz
+    - nehaljwani
