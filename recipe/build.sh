@@ -11,6 +11,10 @@ do
     ln -s $outdir/bin/$FNAME $PREFIX/bin
 done
 
+if [[ $target_platform =~ linux.* ]]; then
+    rm -fr $outdir/platform/gsutil/third_party/crcmod_osx
+fi
+
 # google-cloud-sdk starts from $outdir/lib/googlecloudsdk/core/config.py and
 # searches for any directory containing .install to mark it as the SDK_ROOT
 # Empty directories are ignored by the packaging process in Conda, so add a
