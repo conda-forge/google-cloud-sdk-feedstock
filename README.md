@@ -5,7 +5,7 @@ Home: https://cloud.google.com/sdk/
 
 Package license: Apache v2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Command-line interface for Google Cloud Platform products and services
 
