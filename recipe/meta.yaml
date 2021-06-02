@@ -1,4 +1,4 @@
-{% set version = "342.0.0" %}
+{% set version = "343.0.0" %}
 
 package:
   name: google-cloud-sdk
@@ -6,9 +6,9 @@ package:
 
 source:
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  sha256: 02ecddb11b57e58afcf6f7e45e5dc6be529344d1187e4dfe088ea894bf5c1f55  # [linux]
+  sha256: a3a965b6f27f55471d4a43cf010a002ed41ae22c7cc8287353c023cc05a687d0  # [linux]
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx]
-  sha256: 0453b4ffa084a4d8e0045a2f1586f9c54096d3efb771d8736c21d476c0fb30d7  # [osx]
+  sha256: fbc2b8239ff312b964d39209b6138956acbf7e821c90abd0ac99a2abe5bc06b9  # [osx]
 
 build:
   number: 0
