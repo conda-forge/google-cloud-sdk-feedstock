@@ -7,8 +7,10 @@ package:
 source:
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux]
   sha256: 861a02dcaed5eb8b4b2fe39640355700af322c1e487226e7bf19356496e28cee  # [linux]
-  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx]
-  sha256: d3b995a4b8d0d5a2181d98298ca31020f406c323bc51889a4e3a7aefc346963e  # [osx]
+  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx and build_platform == "osx-64"]
+  sha256: d3b995a4b8d0d5a2181d98298ca31020f406c323bc51889a4e3a7aefc346963e  # [osx and build_platform == "osx-64"]
+  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-arm.tar.gz  # [osx and build_platform == "osx-arm64"]
+  sha256: 8af64643437114658c58d2fa75c58ee830737e04268a650f2992972b5440f1f3  # [osx and build_platform == "osx-arm64"]
 
 build:
   number: 0
