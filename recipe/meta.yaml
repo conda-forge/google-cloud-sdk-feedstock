@@ -1,4 +1,4 @@
-{% set version = "352.0.0" %}
+{% set version = "353.0.0" %}
 
 package:
   name: google-cloud-sdk
@@ -6,11 +6,11 @@ package:
 
 source:
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  sha256: 316d88432378efb55567d2f1851ad7e7481723995b8cefb41f29ee82982f409e  # [linux]
+  sha256: 94fcb77632fed5b6fa61d1bf6c619cbfceb63f3d95911bfe15e7caa401df81c0  # [linux]
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx and build_platform == "osx-64"]
-  sha256: 75bc1e499cbb0a2c204a7caf59869a16734a4d98396b2472f6ba29614b58f1e6  # [osx and build_platform == "osx-64"]
+  sha256: 8541defbe346e179cf4a1baacad1420e4245bc81eeedeb0a90cdf7b0b3b5ebcd  # [osx and build_platform == "osx-64"]
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-arm.tar.gz  # [osx and build_platform == "osx-arm64"]
-  sha256: 18db968d11488e51184b213da54ae411327a8a44c82dfc604f12d341402822e2  # [osx and build_platform == "osx-arm64"]
+  sha256: e5538562e364527dede0b5c1d39075c738ea73b141d0b20abb25cadc4e4e96a6  # [osx and build_platform == "osx-arm64"]
 
 build:
   number: 0
