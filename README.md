@@ -1,11 +1,11 @@
-About google-cloud-sdk
-======================
+About google-cloud-sdk-feedstock
+================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-sdk-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cloud.google.com/sdk/
 
 Package license: Apache v2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/google-cloud-sdk-feedstock/blob/main/LICENSE.txt)
 
 Summary: Command-line interface for Google Cloud Platform products and services
 
