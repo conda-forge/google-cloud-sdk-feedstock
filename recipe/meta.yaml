@@ -13,7 +13,7 @@ source:
   sha256: d71c0b989937a026172331c51a68ba6c4227f15db5969ae92e8d559c68597974  # [osx and build_platform == "osx-arm64"]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
