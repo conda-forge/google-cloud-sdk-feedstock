@@ -5,15 +5,17 @@ package:
   version: {{ version }}
 
 source:
-  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux]
-  sha256: 4a232118abf6d7e80632f161de9465e359750d11aaea3fac59b05629dde45ad9  # [linux]
-  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx and build_platform == "osx-64"]
-  sha256: 0c57551bbf6e7fdbf9d1114fa56aea1970ecae68bac18a70edcb78a391d1b1cc  # [osx and build_platform == "osx-64"]
-  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-arm.tar.gz  # [osx and build_platform == "osx-arm64"]
-  sha256: 944930e3f8aae7507b1b728d3bc95c8de99268e864cb469e0c081f032859f2a7  # [osx and build_platform == "osx-arm64"]
+  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-x86_64.tar.gz  # [linux and x86_64]
+  sha256: 4a232118abf6d7e80632f161de9465e359750d11aaea3fac59b05629dde45ad9  # [linux and x86_64]
+  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-linux-arm.tar.gz  # [linux and aarch64]
+  sha256: 0082b8a2f31c679f92a79a4b4aa969024994e890d28c042ac706b8c501a346a4  # [linux and aarch64]
+  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-x86_64.tar.gz  # [osx and x86_64]
+  sha256: 0c57551bbf6e7fdbf9d1114fa56aea1970ecae68bac18a70edcb78a391d1b1cc  # [osx and x86_64]
+  url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-arm.tar.gz  # [osx and arm64]
+  sha256: 944930e3f8aae7507b1b728d3bc95c8de99268e864cb469e0c081f032859f2a7  # [osx and arm64]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
@@ -33,7 +35,7 @@ test:
 
 about:
   home: https://cloud.google.com/sdk/
-  license: Apache v2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Command-line interface for Google Cloud Platform products and services
