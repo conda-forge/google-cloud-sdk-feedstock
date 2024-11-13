@@ -33,7 +33,7 @@ test:
 
 about:
   home: https://cloud.google.com/sdk/
-  license: Apache v2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: Command-line interface for Google Cloud Platform products and services
