@@ -14,7 +14,7 @@ source:
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-darwin-arm.tar.gz  # [osx and arm64]
   sha256: 37189900ed6b31ecf6efa122b812b9bf21a01c226d9bdfd0891e4ca3d190a611  # [osx and arm64]
   url: https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-{{ version }}-windows-x86_64.zip  # [win and x86_64]
-  sha256: 69f5940c193085405a8d113311e28609c9b12595780d363f3f6f6c11f898b1ff
+  sha256: 69f5940c193085405a8d113311e28609c9b12595780d363f3f6f6c11f898b1ff  # [win and x86_64]
 
 
 build:
