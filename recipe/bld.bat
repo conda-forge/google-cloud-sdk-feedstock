@@ -8,8 +8,8 @@ if not exist "%PREFIX%\bin" mkdir "%PREFIX%\bin"
 
 xcopy * "%outdir%\" /E /I /Q /Y
 
-for %%F in (gcloud gsutil bq docker-credential-gcloud) do (
-    powershell -Command "(Get-Content \"%outdir%\bin\%%F\") -replace '# <cloud-sdk-sh-preamble>', 'set CLOUDSDK_PYTHON=%PREFIX%\bin\python' | Set-Content \"%outdir%\bin\%%F\""
+for %%F in (gcloud.cmd gsutil.cmd bq.cmd docker-credential-gcloud.cmd) do (
+    powershell -Command "(Get-Content \"%outdir%\bin\%%F\") -replace 'rem </cloud-sdk-cmd-preamble>', 'set CLOUDSDK_PYTHON=%PREFIX%\bin\python' | Set-Content \"%outdir%\bin\%%F\""
     mklink "%PREFIX%\bin\%%F" "%outdir%\bin\%%F"
 )
 
