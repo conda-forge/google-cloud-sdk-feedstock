@@ -2,13 +2,13 @@
 
 outdir=$PREFIX/share/$PKG_NAME-$PKG_VERSION-$PKG_BUILDNUM
 mkdir -p $outdir
-mkdir -p $PREFIX/bin
+mkdir -p $PREFIX/python-scripts
 
 cp -r * $outdir
 for FNAME in gcloud gsutil bq docker-credential-gcloud
 do
     sed -i.bak "s|# <cloud-sdk-sh-preamble>|export CLOUDSDK_PYTHON=$PREFIX/bin/python|g" $outdir/bin/$FNAME
-    ln -s $outdir/bin/$FNAME $PREFIX/bin
+    ln -s $outdir/bin/$FNAME $PREFIX/python-scripts/$FNAME
 done
 
 if [[ $target_platform =~ linux.* ]]; then
