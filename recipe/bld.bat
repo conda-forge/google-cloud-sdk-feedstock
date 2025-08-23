@@ -10,7 +10,7 @@ xcopy * "%outdir%\" /E /I /Q /Y
 
 for %%F in (gcloud.cmd gsutil.cmd bq.cmd docker-credential-gcloud.cmd) do (
     echo Patching "%outdir%\bin\%%F"
-    powershell -Command "(Get-Content '%outdir%\bin\%%F') -replace 'rem <cloud-sdk-cmd-preamble>', 'set CLOUDSDK_PYTHON=%PREFIX%\bin\python' | Set-Content '%outdir%\bin\%%F'"
+    powershell -Command "(Get-Content '%outdir%\bin\%%F') -replace 'rem <cloud-sdk-cmd-preamble>', 'set CLOUDSDK_PYTHON=%PREFIX%\python.exe\r\nset CLOUDSDK_ROOT_DIR=%outdir%' | Set-Content '%outdir%\bin\%%F'"
     echo Linking "%PREFIX%\Scripts\%%F" to "%outdir%\bin\%%F"
     mklink /H "%PREFIX%\Scripts\%%F" "%outdir%\bin\%%F"
 )
