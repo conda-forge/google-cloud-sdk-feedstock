@@ -4,13 +4,15 @@ setlocal
 
 set "outdir=%PREFIX%\share\%PKG_NAME%-%PKG_VERSION%-%PKG_BUILDNUM%"
 if not exist "%outdir%" mkdir "%outdir%"
-if not exist "%PREFIX%\python-scripts" mkdir "%PREFIX%\python-scripts"
+if not exist "%PREFIX%\Scripts" mkdir "%PREFIX%\Scripts"
 
 xcopy * "%outdir%\" /E /I /Q /Y
 
 for %%F in (gcloud.cmd gsutil.cmd bq.cmd docker-credential-gcloud.cmd) do (
-    powershell -Command "(Get-Content \"%outdir%\bin\%%F\") -replace 'rem </cloud-sdk-cmd-preamble>', 'set CLOUDSDK_PYTHON=%PREFIX%\bin\python' | Set-Content \"%outdir%\bin\%%F\""
-    mklink "%PREFIX%\bin\%%F" "%outdir%\python-scripts\%%F"
+    echo Patching "%outdir%\bin\%%F"
+    powershell -Command "(Get-Content '%outdir%\bin\%%F') -replace 'rem </cloud-sdk-cmd-preamble>', 'set CLOUDSDK_PYTHON=%PREFIX%\bin\python' | Set-Content '%outdir%\bin\%%F'"
+    echo Linking "%PREFIX%\Scripts\%%F" to "%outdir%\bin\%%F"
+    mklink /H "%PREFIX%\Scripts\%%F" "%outdir%\bin\%%F"
 )
 
 :: google-cloud-sdk starts from %outdir%\lib\googlecloudsdk\core\config.py and
