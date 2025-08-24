@@ -26,9 +26,6 @@ requirements:
     - python {{ python_min }}.*
 
   run:
-    - __linux  # [linux]
-    - __osx    # [osx]
-    - __win    # [win]
     - python >={{ python_min }}
 
 test:
