@@ -16,5 +16,3 @@ noarch_platforms:
   - osx_arm64
   - osx_64
   - win_64
-conda_install_tool: pixi
-conda_build_tool: rattler-build
