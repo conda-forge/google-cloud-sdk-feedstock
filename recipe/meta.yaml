@@ -15,7 +15,7 @@ source:
   sha256: 135283328de833a70456aff1a86a602834429735ee945d3e55e528ba8fc50e3b  # [osx and arm64]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win]
 
 requirements:
